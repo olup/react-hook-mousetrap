@@ -22,3 +22,5 @@ mousetrapHook([
     }
   ]);
 ```
+
+**NOTE : If you want to trap keys in an `input` or `textarea` you need to add the mousetrap class to the element : `className="mousetrap"`**
