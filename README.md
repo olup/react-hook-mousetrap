@@ -1,6 +1,6 @@
 # react-hook-mousetrap
 
-A quick react hook to trigger actions on specific key combination. It uses mousetrap to do the job, so any mousetrap combo or array of combo can be passed as option.
+A quick react hook to trigger actions on specific key combination. It uses [mousetrap](https://github.com/ccampbell/mousetrap) to do the job, so any mousetrap combo or array of combo can be passed as option.
 
 Import it like this :
 
