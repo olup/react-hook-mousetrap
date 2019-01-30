@@ -1,0 +1,32 @@
+{
+  "name": "react-hook-mousetrap",
+  "version": "1.0.0",
+  "description": "A react hook to trigger callbacks on specified key combo with mousetrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olup/react-hook-mousetrap.git"
+  },
+  "keywords": [
+    "ract",
+    "hook",
+    "mousetrap",
+    "keys",
+    "combo",
+    "hotkeys"
+  ],
+  "author": "olup otilapan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olup/react-hook-mousetrap/issues"
+  },
+  "homepage": "https://github.com/olup/react-hook-mousetrap#readme",
+  "dependencies": {
+    "mousetrap": "^1.6.2",
+    "react": "^16.8.0-alpha.0",
+    "react-dom": "^16.8.0-alpha.0"
+  }
+}
