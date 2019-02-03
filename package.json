@@ -26,7 +26,7 @@
   "homepage": "https://github.com/olup/react-hook-mousetrap#readme",
   "dependencies": {
     "mousetrap": "^1.6.2",
-    "react": "^16.8.0-alpha.0",
-    "react-dom": "^16.8.0-alpha.0"
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1"
   }
 }
