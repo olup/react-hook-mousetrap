@@ -1,5 +1,5 @@
 import mousetrap from "mousetrap";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 /**
  * Use mousetrap hook
@@ -8,20 +8,15 @@ import { useEffect, useState } from "react";
  * @param  { function } handlerCallback - A function that is triggered on key combo catch.
  */
 export default (handlerKey, handlerCallback) => {
-  const [trigger, setTrigger] = useState(false);
+  let actionRef = useRef(null);
+  actionRef.current = handlerCallback;
+
   useEffect(() => {
-    mousetrap.bind(handlerKey, () => setTrigger(true));
+    mousetrap.bind(handlerKey, () => {
+      typeof actionRef.current === "function" && actionRef.current();
+    });
     return () => {
       mousetrap.unbind(handlerKey);
     };
-  }, []);
-
-  useEffect(() => {
-    if (trigger) {
-      handlerCallback();
-    }
-    return () => {
-      setTrigger(false);
-    };
-  }, [trigger]);
+  }, [handlerKey]);
 };
