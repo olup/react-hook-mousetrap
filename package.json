@@ -1,6 +1,6 @@
 {
   "name": "react-hook-mousetrap",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A react hook to trigger callbacks on specified key combo with mousetrap",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/olup/react-hook-mousetrap#readme",
   "dependencies": {
     "mousetrap": "^1.6.2",
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }
