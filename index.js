@@ -12,8 +12,8 @@ export default (handlerKey, handlerCallback) => {
   actionRef.current = handlerCallback;
 
   useEffect(() => {
-    mousetrap.bind(handlerKey, () => {
-      typeof actionRef.current === "function" && actionRef.current();
+    mousetrap.bind(handlerKey, (evt, combo) => {
+      typeof actionRef.current === "function" && actionRef.current(evt, combo);
     });
     return () => {
       mousetrap.unbind(handlerKey);
